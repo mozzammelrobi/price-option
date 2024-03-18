@@ -1,5 +1,7 @@
 
 import './App.css'
+import NavBar from './componetns/NavBar/NavBar'
+// import DaisyNav from './componetns/DaisyNav/DaisyNav'
 
 function App() {
 
@@ -7,9 +9,9 @@ function App() {
   return (
     <>
   
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  {/* <DaisyNav></DaisyNav> */}
+  <NavBar></NavBar>
+
 
     </>
   )
