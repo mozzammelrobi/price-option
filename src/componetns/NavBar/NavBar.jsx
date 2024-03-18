@@ -15,7 +15,7 @@ const NavBar = () => {
     ];
 
     return (
-        <nav>
+        <nav className="bg-green-700">
           <div
           className="md:hidden hover:cursor-pointer text-2xl"
            onClick={()=> setOpen(!open)}>
@@ -26,7 +26,9 @@ const NavBar = () => {
             }
           
           </div>
-            <ul className="md:flex">
+            <ul className={`md:flex absolute md:static duration-150
+             ${open ? 'top-7': '-top-60'}
+            bg-green-900 px-6`}>
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link> )
                 }
