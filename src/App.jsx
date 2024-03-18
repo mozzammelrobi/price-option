@@ -2,6 +2,7 @@
 import './App.css'
 import Chart from './componetns/Chart/Chart'
 import NavBar from './componetns/NavBar/NavBar'
+import Phones from './componetns/Phones/Phones'
 import PriceOpton from './componetns/PriceOption/PriceOpton'
 // import DaisyNav from './componetns/DaisyNav/DaisyNav'
 
@@ -16,6 +17,7 @@ function App() {
   {/* <DaisyNav></DaisyNav> */}
   <PriceOpton></PriceOpton>
   <Chart></Chart>
+  <Phones></Phones>
 
 
     </div>
