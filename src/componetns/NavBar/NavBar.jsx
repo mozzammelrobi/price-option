@@ -1,6 +1,10 @@
+import { useState } from "react";
 import Link from "../Link/Link";
+import { HiOutlineMenu } from "react-icons/hi";
+import { IoClose } from "react-icons/io5";
 
 const NavBar = () => {
+    const [open, setOpen] = useState(false)
 
     const routes = [
         { id: 1, name: 'Home', path: '/' },
@@ -12,6 +16,16 @@ const NavBar = () => {
 
     return (
         <nav>
+          <div
+          className="md:hidden hover:cursor-pointer text-2xl"
+           onClick={()=> setOpen(!open)}>
+            {
+                open === true?
+                 <IoClose /> : 
+                 <HiOutlineMenu />
+            }
+          
+          </div>
             <ul className="md:flex">
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link> )
